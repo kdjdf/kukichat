@@ -9,7 +9,7 @@
             "required": true
         },
         "KUKI_API": {
-            "description": "go to Kukichatbot and then send /token you will get a api paste it here ",
+            "description": "go to @Kukichatbot and then send /token you will get a api paste it here ",
             "required": true
         },
         "ERROR_LOG": {
