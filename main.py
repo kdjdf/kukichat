@@ -177,7 +177,7 @@ async def start(client, message):
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="Click here",
-                url=f"t.me/kukichamtbot?start")]])
+                url=f"t.me/KukkiChatBot?start")]])
         await message.reply("Contact me in PM",
                             reply_markup=buttons)
         
@@ -187,7 +187,7 @@ async def start(client, message):
                     InlineKeyboardButton("Repo", url="https://github.com/Ashmit-Das/kukkichamtbot")
                     ]]
         Photo = "https://telegra.ph/file/b04509cc8486f23690bba.jpg"
-        await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @MetaVoid", reply_markup=InlineKeyboardMarkup(buttons))
+        await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @LIGHTNING_SPAMWATCH", reply_markup=InlineKeyboardMarkup(buttons))
 
 
 
