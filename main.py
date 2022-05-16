@@ -182,7 +182,7 @@ async def start(client, message):
                             reply_markup=buttons)
         
     else:
-        buttons = [[InlineKeyboardButton("Support", url="International_friend_chats"),
+        buttons = [[InlineKeyboardButton("Support", url="https://t.me/International_friend_chats"),
                     InlineKeyboardButton("Channel", url="https://t.me/TianaUpdates"),
                     InlineKeyboardButton("Repo", url="https://github.com/Ashmit-Das/kukkichamtbot")
                     ]]
