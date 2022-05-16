@@ -176,7 +176,7 @@ async def start(client, message):
     busername = self.username
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
-            [[reply_markup=buttons(text="Click here",
+            [[InlineKeyboardButton(text="Click here",
                 url=f"t.me/KukkiChatBot?start")]])
         await message.reply("Contact me in PM",
                             reply_markup=buttons)
