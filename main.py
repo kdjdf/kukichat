@@ -72,10 +72,10 @@ async def rmchat(_, message):
             )
     is_kuki = kuki.find_one({"chat_id": message.chat.id})
     if not is_kuki:
-        await message.reply_text("Already Kuki ChatBot Disable")
+        await message.reply_text("Already 𝙉𝙚𝙩𝙝𝙮𝙖 ChatBot Disable")
     else:
         kuki.delete_one({"chat_id": message.chat.id})
-        await message.reply_text("✅ | Kuki Chatbot is disable!")
+        await message.reply_text("✅ | 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot is disable!")
 
 
 
@@ -183,7 +183,11 @@ async def start(client, message):
         
     else:
         buttons = [[InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
-                    InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall")
+                    InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall"),
+                     [
+        InlineKeyboardButton(
+            text="➕️ Add me to your chat ➕️", url=f"https://t.me/nethyabot?startgroup=true"),
+    ],
                     ]]
         Photo = "https://telegra.ph/file/23932e22ece464a1fb06e.jpg"
         await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @updatesofficiall", reply_markup=InlineKeyboardMarkup(buttons))
