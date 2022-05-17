@@ -49,9 +49,9 @@ async def addchat(_, message):
     is_kuki = kuki.find_one({"chat_id": message.chat.id})
     if not is_kuki:
         kuki.insert_one({"chat_id": message.chat.id})
-        await message.reply_text(f"✅ | Successfully\nKuki Chatbot of this Group is set to @{message.chat.username}\n Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n© @TianaUpdates")
+        await message.reply_text(f"✅ | Successfully\n𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot of this Group is set to @{message.chat.username}\n Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n© @updatesofficiall")
     else:
-        await message.reply_text(f"Already Setup Kuki Chatbot of this Group Is @{message.chat.username}")
+        await message.reply_text(f"Already Setup 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot of this Group Is @{message.chat.username}")
 
 
 @bot.on_message(
@@ -177,17 +177,16 @@ async def start(client, message):
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="Click here",
-                url=f"t.me/KukkiChatBot?start")]])
+                url=f"http://t.me/nethyabot?start")]])
         await message.reply("Contact me in PM",
                             reply_markup=buttons)
         
     else:
-        buttons = [[InlineKeyboardButton("Support", url="https://t.me/International_friend_chats"),
-                    InlineKeyboardButton("Channel", url="https://t.me/TianaUpdates"),
-                    InlineKeyboardButton("Repo", url="https://github.com/Ashmit-Das/kukkichamtbot")
+        buttons = [[InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
+                    InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall")
                     ]]
-        Photo = "https://telegra.ph/file/b04509cc8486f23690bba.jpg"
-        await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @TianaUpdates", reply_markup=InlineKeyboardMarkup(buttons))
+        Photo = "https://telegra.ph/file/23932e22ece464a1fb06e.jpg"
+        await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @updatesofficiall", reply_markup=InlineKeyboardMarkup(buttons))
 
 
 
@@ -198,12 +197,12 @@ async def help(client, message):
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="Click here",
-                url=f"t.me/KukkiChatBot?start=help_")]])
+                url=f"http://t.me/nethyabot?start=help_")]])
         await message.reply("Contact me in PM",
                             reply_markup=buttons)
         
     else:    
-        await message.reply_text("/start - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active Kuki Chatbot In Group\n/removechat - Disable Kuki Chatbot In Group")
+        await message.reply_text("/start - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot In Group\n/removechat - Disable 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot In Group")
 
 
 
