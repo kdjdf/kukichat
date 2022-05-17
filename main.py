@@ -183,10 +183,10 @@ async def start(client, message):
         
     else:
         buttons = [[InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
-                    InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall"),
+                    InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall1"),
           ],
           [
-                    InlineKeyboardButton("➕️ Add me to your chat ➕️", url="https://t.me/nethyabot?startgroup=true")
+                    [[InlineKeyboardButton(text="Add Me To Your Group", url="t.me/{}?startgroup=true".format(bot.username)),
           ],
                     ]]
         Photo = "https://telegra.ph/file/23932e22ece464a1fb06e.jpg"
