@@ -186,8 +186,8 @@ async def start(client, message):
                     InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall"),
           ],
           [
-                    InlineKeyboardButton("Repo", url="https://github.com/metavoidteam/kukichatbot")
-          [
+                    InlineKeyboardButton("➕️ Add me to your chat ➕️", url="https://t.me/nethyabot?startgroup=true")
+          ],
                     ]]
         Photo = "https://telegra.ph/file/23932e22ece464a1fb06e.jpg"
         await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @updatesofficiall", reply_markup=InlineKeyboardMarkup(buttons))
