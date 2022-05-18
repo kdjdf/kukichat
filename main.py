@@ -182,7 +182,7 @@ async def start(client, message):
                             reply_markup=buttons)
         
     else:
-        buttons = [[InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
+        buttons = [InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
                     InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall1"),
           ],
           [
