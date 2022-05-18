@@ -182,13 +182,11 @@ async def start(client, message):
                             reply_markup=buttons)
         
     else:
-        buttons = [InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
+       
+        buttons = [[InlineKeyboardButton("Support", url="https://t.me/Unstoppable_talkers"),
                     InlineKeyboardButton("Channel", url="https://t.me/updatesofficiall1"),
-          ],
-          [
-                    [InlineKeyboardButton(text="Add Me To Your Group", url="t.me/{}?startgroup=true".format(bot.username)),
-          ],
-                    ]
+                    InlineKeyboardButton("Add", url="t.me/nethyabot?startgroup=true")
+                    ]]
         Photo = "https://telegra.ph/file/23932e22ece464a1fb06e.jpg"
         await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @updatesofficiall", reply_markup=InlineKeyboardMarkup(buttons))
 
